@@ -24,7 +24,41 @@
 				<Prp name="key" type="S" value="{3EB238D4-F2DE-4808-8C1A-FC54C605A85E}"/>
 				<Prp name="relpath" type="S" value="Log"/>
 			</Node>
-			<Node name="variables"/>
+			<Node name="variables">
+				<Node name="datav3">
+					<Node name="var0">
+						<Node name="value">
+							<Prp name="strvalue" type="H" value="47003A005C005F0041006B00610073006800530074007500660066005C00540043004700690074005C00500072006F006A00650063007400530075006900740065004700690074005C00500072006F006A0065006300740031005C00"/>
+						</Node>
+						<Prp name="name" type="S" value="ROOT"/>
+					</Node>
+					<Node name="var1">
+						<Node name="value">
+							<Prp name="strvalue" type="H" value="6300680072006F006D006500"/>
+						</Node>
+						<Prp name="name" type="S" value="BROWSER"/>
+					</Node>
+					<Node name="var2">
+						<Node name="value">
+							<Prp name="strvalue" type="H" value="7700770077002E0067006F006F0067006C0065002E0063006F006D00"/>
+						</Node>
+						<Prp name="name" type="S" value="ENV_URL"/>
+					</Node>
+					<Node name="var3">
+						<Node name="value">
+							<Prp name="strvalue" type="H" value="61006B00610073006800"/>
+						</Node>
+						<Prp name="name" type="S" value="USERNAME"/>
+					</Node>
+					<Node name="var4">
+						<Node name="value">
+							<Prp name="strvalue" type="H" value="640065006D006F004000310032003300"/>
+						</Node>
+						<Prp name="name" type="S" value="PASSWORD"/>
+					</Node>
+				</Node>
+				<Prp name="version" type="I" value="3"/>
+			</Node>
 		</Node>
 		<Prp name="signature" type="S" value="{49FC0C30-9EF7-4DBD-97A8-B7A00E79A2AF}"/>
 	</Node>

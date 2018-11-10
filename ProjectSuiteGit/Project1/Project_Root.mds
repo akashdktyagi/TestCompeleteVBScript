@@ -17,10 +17,35 @@
 	</folders>
 	<config language="{897793E3-73F3-4895-A956-3D41D3A24A45}" />
 	<testItems key="{CE097B43-3ED9-46D5-A9B1-1C525378341A}">
-		<children />
+		<children>
+			<testItem name="Test_CheckLogin" key="{481761BF-DD01-4486-8F8C-734357E5C4F0}" group="False" enabled="True" testMoniker="{8A805561-4841-4E93-8FAE-30248B726759}Driver" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+				<testParameters>
+					<param0 name="ARG_PLAYLIST_NAME" type="3" localVarName="" varType="8" value="PL_CheckLogin.csv" />
+				</testParameters>
+				<children />
+			</testItem>
+		</children>
 	</testItems>
 	<variables key="{0B3C870E-F57B-43F6-962C-EC8EB794F981}">
-		<data Version="3" />
+		<data Version="3">
+			<Items>
+				<Variable Name="ROOT" Type="{123F0C0F-44B4-4BAF-B0E6-F3F89FD873B5}" Local="True">
+					<DefValue />
+				</Variable>
+				<Variable Name="BROWSER" Type="{123F0C0F-44B4-4BAF-B0E6-F3F89FD873B5}" Local="True">
+					<DefValue />
+				</Variable>
+				<Variable Name="ENV_URL" Type="{123F0C0F-44B4-4BAF-B0E6-F3F89FD873B5}" Local="True">
+					<DefValue />
+				</Variable>
+				<Variable Name="USERNAME" Type="{123F0C0F-44B4-4BAF-B0E6-F3F89FD873B5}" Local="True">
+					<DefValue />
+				</Variable>
+				<Variable Name="PASSWORD" Type="{123F0C0F-44B4-4BAF-B0E6-F3F89FD873B5}" Local="True">
+					<DefValue />
+				</Variable>
+			</Items>
+		</data>
 	</variables>
 	<settings key="{38B65AAB-1036-40DB-BBE2-0DFCA6A2A87C}">
 		<settingsVersion value="12.60" />
