@@ -1,0 +1,5 @@
+RUN_FLAG,SCNERIO_NAME,COMPANY_NAME
+Y,CheckLogin,ABC
+Y,CheckLogin,DEF
+N,CheckLogin,NO RUN
+Y,CheckLogin,JKL

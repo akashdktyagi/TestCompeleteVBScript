@@ -1,0 +1,7 @@
+﻿
+
+function CheckLogin(sCompanyName,sRegion)
+  
+  ' Validate Login Related Code has to be here
+  Log.Checkpoint "Login and Logout Successfull for Company with Argument as: " & sCompanyName & " Region:" & sRegion,""
+End Function

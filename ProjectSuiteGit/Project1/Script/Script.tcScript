@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <Root signature="{9252F941-DB23-4FCA-AA50-858B33BB4A19}" version="11.40">
 	<children>
-		<child name="Unit1" key="{7FDAE4FE-77E6-46D7-BD48-AC2FA5213BE0}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
-			<data path="Unit1.svb" />
+		<child name="Config" key="{75242DF3-7C2C-46E2-9FCE-DAEB6C47A043}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Config.svb" />
+		</child>
+		<child name="Driver" key="{8A805561-4841-4E93-8FAE-30248B726759}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Driver.svb" />
+		</child>
+		<child name="GenricResuables" key="{EB7109E0-4C44-4C30-93FA-EDEDEEE0C81C}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="GenricResuables.svb" />
+		</child>
+		<child name="ProductResuables" key="{A7C2C213-246E-4B4A-891E-F1B847053A6D}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="ProductResuables.svb" />
+		</child>
+		<child name="TC_Scnerios" key="{42F8C7FB-554A-4015-A5C0-F375ADB8566D}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="TC_Scnerios.svb" />
 		</child>
 	</children>
 	<folders />

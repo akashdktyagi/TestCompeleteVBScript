@@ -1,0 +1,5 @@
+RUN_FLAG,SCNERIO_NAME,COMPANY_NAME,REGION
+Y,CheckLogin,ABC,US
+Y,CheckLogin,DEF,US
+N,CheckLogin,NO RUN,US
+Y,CheckLogin,JKL,US

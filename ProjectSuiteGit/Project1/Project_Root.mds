@@ -4,14 +4,14 @@
 		<child name="NameMapping" key="{A9FF6024-84F9-47C5-8998-C96D735008CC}" type="Name Mapping" typeId="{5DCBAC3B-D39C-497C-9BE8-744CBADD37AA}" pluginName="NameMapping">
 			<data path="NameMapping\NameMapping.tcNM" />
 		</child>
-		<child name="Script" key="{A51B051D-8CC6-481F-9BF3-C1B9110C3B25}" type="Script" typeId="{9252F941-DB23-4FCA-AA50-858B33BB4A19}" pluginName="Script">
+		<child name="Script" key="{64E561C8-CF5C-4B80-8A32-AC4B470B9E7C}" type="Script" typeId="{9252F941-DB23-4FCA-AA50-858B33BB4A19}" pluginName="Script">
 			<data path="Script\Script.tcScript" />
 		</child>
 	</children>
 	<folders>
 		<folder caption="Advanced" description="A logical folder that is used to organize project items and elements." moniker="{69583268-92F3-49FA-B573-C831F5ABC27B}">
 			<references>
-				<ref key="{A51B051D-8CC6-481F-9BF3-C1B9110C3B25}" />
+				<ref key="{64E561C8-CF5C-4B80-8A32-AC4B470B9E7C}" />
 			</references>
 		</folder>
 	</folders>

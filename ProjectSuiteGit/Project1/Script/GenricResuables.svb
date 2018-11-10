@@ -1,0 +1,12 @@
+﻿
+function InvokeBrowser(sBrowserName)
+  
+End Function
+
+function CloseBrowser(sBrowserName)
+  
+End Function
+
+function NavigateToBrowser(url)
+  
+End Function

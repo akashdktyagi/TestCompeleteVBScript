@@ -1,0 +1,58 @@
+﻿'USEUNIT Config
+'USEUNIT TC_Scnerios
+
+'Author: Akash
+'Date: 08Oct2018
+'Description:
+'History:
+'--
+Function Driver(ARG_PLAYLIST_NAME)
+  
+  'ROOT Variable-Set Path
+  if not(Project.Variables.VariableExists("ROOT")) Then
+    Project.Variables.AddVariable "ROOT","String"
+  end if
+  Project.Variables.VariableByName("ROOT") = Project.Path
+  
+  'Read Config.csv file and Store its content in Project Variables
+  ConfigCSV
+  
+  'Set playlist folder path
+  PLAYLIST_FOLDER = Project.Variables.VariableByName("ROOT") & "Data\PlayLists\"   
+  
+  'Read the Playlist rows and Iterate each row
+  DDT.CSVDriver(PLAYLIST_FOLDER & ARG_PLAYLIST_NAME)
+  
+  ' Iterates through records
+  While Not DDT.CurrentDriver.EOF()
+
+    RUN_FLAG = DDT.CurrentDriver.Value(0)
+    SCNERIO_NAME = DDT.CurrentDriver.Value(1)
+    COMPANY_NAME = DDT.CurrentDriver.Value(2)
+    REGION = DDT.CurrentDriver.Value(3)
+    
+    'Apending Folder
+    Log.AppendFolder "Scnerio Name: " & SCNERIO_NAME & " Company Name: " & COMPANY_NAME
+
+    'Execute the Method only if Run flag is marked as Y
+    if RUN_FLAG = "Y" then
+      on error resume next ' error handling so that if one row fails, test should not stop
+      Execute(SCNERIO_NAME & """" & COMPANY_NAME & """" & "," & """" & REGION & """")
+      if err.number <> 0 then
+        Log.Error "Error Encountered while Executing: ScnName: " 
+      end if
+      on error goto 0
+    else
+      Log.warning "Scnerio Skipped since run flag marked as N " & SCNERIO_NAME & " Company Name: " & COMPANY_NAME
+    end if
+    
+    DDT.CurrentDriver.Next()
+    
+    'Poping out log folder
+    Log.PopLogFolder
+  Wend
+   
+  ' Closes the driver
+  DDT.CloseDriver(DDT.CurrentDriver.Name)
+
+End Function
